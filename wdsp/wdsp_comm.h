@@ -32,7 +32,7 @@ warren@wpratt.com
 #include <string.h>
 #include "linux_port.h"
 
-#endif
+#endif // defined(linux) || defined(__APPLE__)
 
 
 #include <math.h>
