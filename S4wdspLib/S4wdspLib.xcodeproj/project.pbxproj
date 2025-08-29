@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE0C51AA2E624F76002C7159 /* libfftw3_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0C51A92E624F70002C7159 /* libfftw3_universal.a */; };
+		EE0C51AC2E624F87002C7159 /* libfftw3f_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0C51AB2E624F83002C7159 /* libfftw3f_universal.a */; };
+		EE0C52BB2E6250B2002C7159 /* libS4wdspLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE0C51A12E624F42002C7159 /* libS4wdspLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE0C52BC2E6250B2002C7159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0C51992E624F42002C7159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE0C51A02E624F42002C7159;
+			remoteInfo = S4wdspLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE0C51A12E624F42002C7159 /* libS4wdspLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libS4wdspLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0C51A92E624F70002C7159 /* libfftw3_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_universal.a; path = ../fftw_libraries/universal/libfftw3_universal.a; sourceTree = "<group>"; };
+		EE0C51AB2E624F83002C7159 /* libfftw3f_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_universal.a; path = ../fftw_libraries/universal/libfftw3f_universal.a; sourceTree = "<group>"; };
+		EE0C52B72E6250B2002C7159 /* S4wdspLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S4wdspLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EE0C52B22E625030002C7159 /* Exceptions for "wdsp" folder in "S4wdspLib" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Makefile,
+			);
+			publicHeaders = (
+				wdsp.h,
+			);
+			target = EE0C51A02E624F42002C7159 /* S4wdspLib */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EE0C522F2E624FDD002C7159 /* wdsp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EE0C52B22E625030002C7159 /* Exceptions for "wdsp" folder in "S4wdspLib" target */,
+			);
+			name = wdsp;
+			path = ../wdsp;
+			sourceTree = SOURCE_ROOT;
+		};
+		EE0C52B82E6250B2002C7159 /* S4wdspLibTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = S4wdspLibTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE0C519F2E624F42002C7159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0C51AA2E624F76002C7159 /* libfftw3_universal.a in Frameworks */,
+				EE0C51AC2E624F87002C7159 /* libfftw3f_universal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0C52B42E6250B2002C7159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0C52BB2E6250B2002C7159 /* libS4wdspLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0C51982E624F42002C7159 = {
+			isa = PBXGroup;
+			children = (
+				EE0C52B82E6250B2002C7159 /* S4wdspLibTests */,
+				EE0C51A82E624F70002C7159 /* Frameworks */,
+				EE0C51A22E624F42002C7159 /* Products */,
+				EE0C522F2E624FDD002C7159 /* wdsp */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0C51A22E624F42002C7159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE0C51A12E624F42002C7159 /* libS4wdspLib.a */,
+				EE0C52B72E6250B2002C7159 /* S4wdspLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0C51A82E624F70002C7159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE0C51AB2E624F83002C7159 /* libfftw3f_universal.a */,
+				EE0C51A92E624F70002C7159 /* libfftw3_universal.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE0C519D2E624F42002C7159 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE0C51A02E624F42002C7159 /* S4wdspLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0C51A52E624F42002C7159 /* Build configuration list for PBXNativeTarget "S4wdspLib" */;
+			buildPhases = (
+				EE0C519D2E624F42002C7159 /* Headers */,
+				EE0C519E2E624F42002C7159 /* Sources */,
+				EE0C519F2E624F42002C7159 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EE0C522F2E624FDD002C7159 /* wdsp */,
+			);
+			name = S4wdspLib;
+			packageProductDependencies = (
+			);
+			productName = S4wdspLib;
+			productReference = EE0C51A12E624F42002C7159 /* libS4wdspLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE0C52B62E6250B2002C7159 /* S4wdspLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0C52BE2E6250B2002C7159 /* Build configuration list for PBXNativeTarget "S4wdspLibTests" */;
+			buildPhases = (
+				EE0C52B32E6250B2002C7159 /* Sources */,
+				EE0C52B42E6250B2002C7159 /* Frameworks */,
+				EE0C52B52E6250B2002C7159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE0C52BD2E6250B2002C7159 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EE0C52B82E6250B2002C7159 /* S4wdspLibTests */,
+			);
+			name = S4wdspLibTests;
+			packageProductDependencies = (
+			);
+			productName = S4wdspLibTests;
+			productReference = EE0C52B72E6250B2002C7159 /* S4wdspLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0C51992E624F42002C7159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					EE0C51A02E624F42002C7159 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					EE0C52B62E6250B2002C7159 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = EE0C519C2E624F42002C7159 /* Build configuration list for PBXProject "S4wdspLib" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE0C51982E624F42002C7159;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EE0C51A22E624F42002C7159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE0C51A02E624F42002C7159 /* S4wdspLib */,
+				EE0C52B62E6250B2002C7159 /* S4wdspLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE0C52B52E6250B2002C7159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE0C519E2E624F42002C7159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE0C52B32E6250B2002C7159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE0C52BD2E6250B2002C7159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE0C51A02E624F42002C7159 /* S4wdspLib */;
+			targetProxy = EE0C52BC2E6250B2002C7159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE0C51A32E624F42002C7159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE0C51A42E624F42002C7159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE0C51A62E624F42002C7159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../fftw_libraries/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../fftw_libraries/universal\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE0C51A72E624F42002C7159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../fftw_libraries/include\"";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../fftw_libraries/universal\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EE0C52BF2E6250B2002C7159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seastonessoftware.S4wdspLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		EE0C52C02E6250B2002C7159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VRBXNNQ5TF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seastonessoftware.S4wdspLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE0C519C2E624F42002C7159 /* Build configuration list for PBXProject "S4wdspLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0C51A32E624F42002C7159 /* Debug */,
+				EE0C51A42E624F42002C7159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0C51A52E624F42002C7159 /* Build configuration list for PBXNativeTarget "S4wdspLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0C51A62E624F42002C7159 /* Debug */,
+				EE0C51A72E624F42002C7159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0C52BE2E6250B2002C7159 /* Build configuration list for PBXNativeTarget "S4wdspLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0C52BF2E6250B2002C7159 /* Debug */,
+				EE0C52C02E6250B2002C7159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0C51992E624F42002C7159 /* Project object */;
+}
