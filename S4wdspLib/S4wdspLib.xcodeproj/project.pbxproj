@@ -57,6 +57,12 @@
 			path = S4wdspLibTests;
 			sourceTree = "<group>";
 		};
+		EE0C53052E6264D3002C7159 /* specbleach */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = specbleach;
+			path = ../specbleach;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 				EE0C51A82E624F70002C7159 /* Frameworks */,
 				EE0C51A22E624F42002C7159 /* Products */,
 				EE0C522F2E624FDD002C7159 /* wdsp */,
+				EE0C53052E6264D3002C7159 /* specbleach */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +142,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				EE0C522F2E624FDD002C7159 /* wdsp */,
+				EE0C53052E6264D3002C7159 /* specbleach */,
 			);
 			name = S4wdspLib;
 			packageProductDependencies = (
