@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEA1C38C2E620C3300451207 /* libfftw3_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA1C38B2E620C2E00451207 /* libfftw3_universal.a */; };
+		EEA1C38E2E620C4200451207 /* libfftw3f_universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA1C38D2E620C3D00451207 /* libfftw3f_universal.a */; };
 		EEFFA1282E600A77001AB4BE /* S4wdsp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFFA11C2E600A77001AB4BE /* S4wdsp.framework */; };
-		EEFFA1392E600AC4001AB4BE /* libfftw3.3_universal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFFA1382E600AC4001AB4BE /* libfftw3.3_universal.dylib */; };
-		EEFFA13A2E600AC4001AB4BE /* libfftw3.3_universal.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EEFFA1382E600AC4001AB4BE /* libfftw3.3_universal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		EEFFA13D2E600AD2001AB4BE /* libfftw3f.3_universal.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFFA13C2E600AD2001AB4BE /* libfftw3f.3_universal.dylib */; };
-		EEFFA13E2E600AD2001AB4BE /* libfftw3f.3_universal.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = EEFFA13C2E600AD2001AB4BE /* libfftw3f.3_universal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,22 +22,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		EEFFA13B2E600AC4001AB4BE /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				EEFFA13A2E600AC4001AB4BE /* libfftw3.3_universal.dylib in Embed Libraries */,
-				EEFFA13E2E600AD2001AB4BE /* libfftw3f.3_universal.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		EEA1C38B2E620C2E00451207 /* libfftw3_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_universal.a; path = ../fftw_libraries/universal/libfftw3_universal.a; sourceTree = "<group>"; };
+		EEA1C38D2E620C3D00451207 /* libfftw3f_universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_universal.a; path = ../fftw_libraries/universal/libfftw3f_universal.a; sourceTree = "<group>"; };
 		EEFFA11C2E600A77001AB4BE /* S4wdsp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = S4wdsp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFFA1272E600A77001AB4BE /* S4wdspTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = S4wdspTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFFA1382E600AC4001AB4BE /* libfftw3.3_universal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libfftw3.3_universal.dylib; path = ../fftw_libraries/universal/libfftw3.3_universal.dylib; sourceTree = "<group>"; };
@@ -102,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEFFA1392E600AC4001AB4BE /* libfftw3.3_universal.dylib in Frameworks */,
-				EEFFA13D2E600AD2001AB4BE /* libfftw3f.3_universal.dylib in Frameworks */,
+				EEA1C38C2E620C3300451207 /* libfftw3_universal.a in Frameworks */,
+				EEA1C38E2E620C4200451207 /* libfftw3f_universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +127,8 @@
 		EEFFA1372E600AC4001AB4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EEA1C38D2E620C3D00451207 /* libfftw3f_universal.a */,
+				EEA1C38B2E620C2E00451207 /* libfftw3_universal.a */,
 				EEFFA13C2E600AD2001AB4BE /* libfftw3f.3_universal.dylib */,
 				EEFFA1382E600AC4001AB4BE /* libfftw3.3_universal.dylib */,
 			);
@@ -169,7 +156,6 @@
 				EEFFA1182E600A77001AB4BE /* Sources */,
 				EEFFA1192E600A77001AB4BE /* Frameworks */,
 				EEFFA11A2E600A77001AB4BE /* Resources */,
-				EEFFA13B2E600AC4001AB4BE /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -303,9 +289,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "../$(PROJECTDIR)/fftw_libraries/include";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright SeaStones Software and Michael Papp 2025";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application uses the microphone on the device it is running on as the audio input to the software defined transceiver it is controlling.  For example, a Hermes Lite 2 or a CAT-controlled vendor transceiver.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,9 +325,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = "../$(PROJECTDIR)/fftw_libraries/include";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright SeaStones Software and Michael Papp 2025";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application uses the microphone on the device it is running on as the audio input to the software defined transceiver it is controlling.  For example, a Hermes Lite 2 or a CAT-controlled vendor transceiver.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
